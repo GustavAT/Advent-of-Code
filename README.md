@@ -3,7 +3,7 @@
 Solutions to (all?) [Advent of Code 2020 <img src="https://www.pngrepo.com/png/35710/180/external.png" width="10" alt="External link">](https://adventofcode.com/2020)
  challenges implemented using Node and TypeScript.
 
-**Install dependencies using *npm*:**
+**Install dependencies using *`npm`*:**
 
 ```bash
 npm i
