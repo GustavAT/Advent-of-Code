@@ -12,6 +12,6 @@ npm i
 **Run a challenge located at `./src/*` using `ts-node`:**
 
 ```bash
-# Day 1 challenge
-ts-node src/day01
+# Day 1 challenge - part 1
+ts-node src/day01-part1
 ```
