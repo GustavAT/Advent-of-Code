@@ -8,6 +8,7 @@ Solutions to (all?) [Advent of Code 2020 <img src="https://www.pngrepo.com/png/3
 | Challenge | Solution |
 |-|-|
 |[Day 1: Report Repair](https://adventofcode.com/2020/day/1)|[day01.ts](./src/day01.ts)|
+|[Day 2: Password Philosophy](https://adventofcode.com/2020/day/2)|[day01.ts](./src/day02.ts)|
 
 
 
