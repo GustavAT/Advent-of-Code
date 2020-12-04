@@ -1,4 +1,4 @@
-import { readAllLinesFilterEmpty } from './util';
+import { readAllLinesFilterEmpty } from '../util';
 
 const part1 = (input: number[]): number | undefined => {
     for (let i = 0; i < input.length - 1; i++) {
@@ -26,6 +26,6 @@ const part2 = (input: number[]): number | undefined => {
     return undefined;
 }
 
-const input = readAllLinesFilterEmpty('./res/input01.txt').map((number) => parseInt(number));
+const input = readAllLinesFilterEmpty('./res/2020/input01.txt').map((number) => parseInt(number));
 console.log('part1:', part1(input));
 console.log('part2:', part2(input));

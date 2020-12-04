@@ -1,4 +1,4 @@
-import { readAllLines } from "./util";
+import { readAllLines } from "../util";
 
 const chunk = (input: string[]): { [key: string]: string }[] => {
     const chunks: {}[] = [];
@@ -81,6 +81,6 @@ const part2 = (input: string[]): number => {
     return passports.reduce((total, passport) => total += (isValid2(passport) ? 1 : 0), 0);
 }
 
-const input = readAllLines('./res/input04.txt');
+const input = readAllLines('./res/2020/input04.txt');
 console.log('Valid passports (part 1):', part1(input));
 console.log('Valid passports (part 2):', part2(input));
