@@ -1,6 +1,6 @@
 # 🎄 Advent of Code 🎄
 
-[![AoC 2020 Progress](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/GustavAT/advent-of-code-2020/master/.github/badges/2020.json)](./src/2020/)
+[![AoC 2020 Progress](https://img.shields.io/badge/AoC%202020-4%2F25-dodgerblue)](./src/2020/)
 
 Solutions to [Advent of Code](https://adventofcode.com/) puzzles implemented in TypeScript.
 
