@@ -1,4 +1,4 @@
-import { readAllLines } from './util';
+import { readAllLinesFilterEmpty } from './util';
 
 type Policy = { min: number; max: number; char: string };
 type Password = { policy: Policy; password: string; };
@@ -34,6 +34,6 @@ const part2 = (passwords: Password[]): number => {
     return passwords.reduce((total, current) => total + (isValid2(current) ? 1 : 0), 0);
 }
 
-const input = readAllLines('./res/input02.txt').map(lineToPasswordPolicy);
+const input = readAllLinesFilterEmpty('./res/input02.txt').map(lineToPasswordPolicy);
 console.log('Valid passwords (policy 1):', part1(input));
 console.log('Valid passwords (policy 2):', part2(input));

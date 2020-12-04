@@ -1,4 +1,4 @@
-import { readAllLines } from "./util";
+import { readAllLinesFilterEmpty } from "./util";
 
 const trees = (input: string[], rowStep: number, columnStep: number): number => {
     let trees = 0;
@@ -31,6 +31,6 @@ const part2 = (input: string[]): number => {
         trees(input, 2, 1);
 }
 
-const input = readAllLines('./res/input03.txt');
+const input = readAllLinesFilterEmpty('./res/input03.txt');
 console.log('Trees encountered (part 1):', part1(input));
 console.log('Trees encountered (part 2):', part2(input));
