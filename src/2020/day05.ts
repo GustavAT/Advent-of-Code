@@ -1,26 +1,10 @@
 import { readAllLinesFilterEmpty } from "../util";
 
-const calc = (input: string, min: number, max: number): number => {
-    if (min === max) {
-        return min;
-    }
+const parseLine = (line: string): number =>
+    parseInt(line.replace(/(F|L)/g, '0').replace(/(B|R)/g, '1'), 2);
 
-    // take lower half
-    if (input[0] === 'F' || input[0] === 'L') {
-        return calc(input.substr(1), min, min + Math.floor((max - min) / 2));
-    }
-
-    // take upper half
-    return calc(input.substr(1), min + Math.ceil((max - min) / 2), max);
-}
-const calcSeats = (input: string[]): number[] => {
-    return input.map((line) => {
-        const row = calc(line.slice(0, 7), 0, 127);
-        const column = calc(line.slice(7), 0, 7);
-
-        return row * 8 + column;
-    });
-}
+const calcSeats = (input: string[]): number[] => input.map((line) =>
+    (parseLine(line.slice(0, 7)) << 3) + parseLine(line.slice(7)));
 
 const part1 = (input: string[]): number => Math.max(...calcSeats(input));
 
