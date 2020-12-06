@@ -9,6 +9,9 @@ export const readAllLines = (path: string): string[] => fs.readFileSync(path, 'u
 export const intersect = <T> (a: T[], b: T[]): T[] =>
     a.filter((x) => b.includes(x));
 
+export const minus = <T> (a: T[], b: T[]): T[] =>
+    a.filter((x) => !b.includes(x));
+
 export const groupInput = (input: string[]): string[][] => {
     const groups: string[][] = [];
 
