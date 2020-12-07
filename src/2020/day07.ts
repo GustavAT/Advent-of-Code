@@ -1,4 +1,4 @@
-import { distinct, readAllLinesFilterEmpty } from '../util';
+import { readAllLinesFilterEmpty, union } from '../util';
 
 /**
  * Regexp that matches the following patterns
@@ -25,14 +25,13 @@ const getBags = (current: string, rules: Record<string, string[]>): string[] => 
     const bags = rules[current] || [];
     const parentBags = bags.reduce((all, b) => [...all, ...getBags(b, rules)], [] as string[]);
 
-    return [...bags, ...parentBags];
+    return union(bags, parentBags);
 }
 
 const part1 = (input: string[]): number => {
     const rules = createInverseMap(input);
-    const allBags = getBags('shiny gold', rules);
 
-    return distinct(allBags).length;
+    return getBags('shiny gold', rules).length;
 }
 
 const createMap = (input: string[]): Record<string, { count: number, bag: string }[]> => {

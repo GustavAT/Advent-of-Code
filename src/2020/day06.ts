@@ -1,20 +1,17 @@
-import { intersect, groupInput, readAllLines } from '../util';
+import { groupInput, intersect, readAllLines, union } from '../util';
 
-const groupToSizeDistinct = (group: string[]): number =>
-    new Set(group
-        .reduce((string, current) => string + current, '')
-        .split('')).size;
+const groupUnion = (groups: string[]): string[] =>
+    groups.reduce((c, g) => union(c, [...g.split('')]), [] as string[]);
 
 const part1 = (input: string[]): number => groupInput(input)
-    .map(groupToSizeDistinct)
+    .map((g) => groupUnion(g).length)
     .reduce((sum, x) => sum + x, 0);
 
-const groupToSizeCommon = (groups: string[]): number => groups
-    .reduce((c, g) => intersect(c, g.split('')), groups[0].split(''))
-    .length;
+const groupIntersect = (groups: string[]): string[] =>
+    groups.reduce((c, g) => intersect(c, g.split('')), groups[0].split(''));
 
 const part2 = (input: string[]): number => groupInput(input)
-    .map(groupToSizeCommon)
+    .map((g) => groupIntersect(g).length)
     .reduce((sum, x) => sum + x, 0);
 
 const input = readAllLines('./res/2020/input06.txt');

@@ -12,7 +12,10 @@ export const intersect = <T>(a: T[], b: T[]): T[] =>
 export const minus = <T>(a: T[], b: T[]): T[] =>
     a.filter((x) => !b.includes(x));
 
-export const distinct = <T>(a: T[]): T[] => 
+export const union = <T>(a: T[], b: T[]): T[] =>
+    distinct([...a, ...b]);
+
+export const distinct = <T>(a: T[]): T[] =>
     a.filter((x, idx) => idx === a.indexOf(x));
 
 export const groupInput = (input: string[]): string[][] => {
