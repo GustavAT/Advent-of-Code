@@ -6,11 +6,14 @@ export const readAllLinesFilterEmpty = (path: string): string[] => readAllLines(
 export const readAllLines = (path: string): string[] => fs.readFileSync(path, 'utf-8')
     .split('\n');
 
-export const intersect = <T> (a: T[], b: T[]): T[] =>
+export const intersect = <T>(a: T[], b: T[]): T[] =>
     a.filter((x) => b.includes(x));
 
-export const minus = <T> (a: T[], b: T[]): T[] =>
+export const minus = <T>(a: T[], b: T[]): T[] =>
     a.filter((x) => !b.includes(x));
+
+export const distinct = <T>(a: T[]): T[] => 
+    a.filter((x, idx) => idx === a.indexOf(x));
 
 export const groupInput = (input: string[]): string[][] => {
     const groups: string[][] = [];
