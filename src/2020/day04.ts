@@ -1,25 +1,5 @@
-import { readAllLines } from "../util";
-
-const chunk = (input: string[]): { [key: string]: string }[] => {
-    const chunks: {}[] = [];
-
-    let passport: { [key: string]: string } = {};
-    for (const line of input) {
-        if (line.length === 0) {
-            // Begin a new passport
-            chunks.push(passport);
-            passport = {};
-        } else {
-            // Add properties to passport
-            line.split(' ').forEach((kvp) => {
-                const [key, value] = kvp.split(':');
-                passport[key] = value;
-            });
-        }
-    }
-
-    return chunks;
-}
+import { readAllLines } from '../io.util';
+import { groupInput } from '../util';
 
 const validateBoundaries = (value: string, min: number, max: number): boolean => {
     const number = parseInt(value);
@@ -69,14 +49,26 @@ const isValid2 = (passport: { [key: string]: string }): boolean => {
         validate9DigitNumber(passport['pid']);
 }
 
+const getPassports = (input: string[]): { [key: string]: string }[] => {
+    return groupInput(input)
+        .map((g) =>
+            g.join(' ').split(' ').reduce((p, kvp) => {
+                const [key, value] = kvp.split(':');
+                p[key] = value;
+
+                return p;
+            }, {} as { [key: string]: string })
+        );
+}
+
 const part1 = (input: string[]): number => {
-    const passports = chunk(input);
+    const passports = getPassports(input);
 
     return passports.reduce((total, passport) => total += (isValid1(passport) ? 1 : 0), 0);
 }
 
 const part2 = (input: string[]): number => {
-    const passports = chunk(input);
+    const passports = getPassports(input);
 
     return passports.reduce((total, passport) => total += (isValid2(passport) ? 1 : 0), 0);
 }

@@ -1,4 +1,4 @@
-import { readAllLinesFilterEmpty } from "../util";
+import { readAllLinesFilterEmpty } from '../io.util';
 
 const trees = (input: string[], rowStep: number, columnStep: number): number => {
     let trees = 0;

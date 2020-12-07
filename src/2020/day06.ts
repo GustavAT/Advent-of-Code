@@ -1,4 +1,6 @@
-import { groupInput, intersect, readAllLines, union } from '../util';
+import { readAllLines } from '../io.util';
+import { intersect, union } from '../sets.util';
+import { groupInput } from '../util';
 
 const groupUnion = (groups: string[]): string[] =>
     groups.reduce((c, g) => union(c, [...g.split('')]), [] as string[]);

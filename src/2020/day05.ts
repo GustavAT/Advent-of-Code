@@ -1,4 +1,5 @@
-import { minus, readAllLinesFilterEmpty } from "../util";
+import { readAllLinesFilterEmpty } from '../io.util';
+import { minus } from '../sets.util';
 
 const parseLine = (line: string): number =>
     parseInt(line.replace(/(F|L)/g, '0').replace(/(B|R)/g, '1'), 2);

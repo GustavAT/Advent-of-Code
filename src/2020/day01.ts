@@ -1,4 +1,4 @@
-import { readAllLinesFilterEmpty } from '../util';
+import { readAllLinesFilterEmpty } from '../io.util';
 
 const part1 = (input: number[]): number | undefined => {
     for (let i = 0; i < input.length - 1; i++) {

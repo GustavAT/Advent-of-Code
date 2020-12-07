@@ -1,4 +1,5 @@
-import { readAllLinesFilterEmpty, union } from '../util';
+import { readAllLinesFilterEmpty } from '../io.util';
+import { union } from '../sets.util';
 
 /**
  * Regexp that matches the following patterns

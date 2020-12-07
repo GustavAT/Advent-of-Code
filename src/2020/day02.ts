@@ -1,4 +1,4 @@
-import { readAllLinesFilterEmpty } from '../util';
+import { readAllLinesFilterEmpty } from '../io.util';
 
 type Policy = { min: number; max: number; char: string };
 type Password = { policy: Policy; password: string; };
