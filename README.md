@@ -1,6 +1,6 @@
 # 🎄 Advent of Code 🎄
 
-[![AoC 2020 Progress](https://img.shields.io/badge/AoC%202020-7%2F25-dodgerblue?logo=typescript&logoWidth=10)](./src/2020/)
+[![AoC 2020 Progress](https://img.shields.io/badge/AoC%202020-8%2F25-dodgerblue?logo=typescript&logoWidth=10)](./src/2020/)
 
 Solutions to [Advent of Code](https://adventofcode.com/) puzzles written in TypeScript.
 
@@ -28,3 +28,4 @@ ts-node src/2020/day01
 | 5 | 🛫 [Binary Boarding](https://adventofcode.com/2020/day/5) | [day05.ts](./src/2020/day05.ts)|
 | 6 | 🛃 [Custom Customs](https://adventofcode.com/2020/day/6) | [day06.ts](./src/2020/day06.ts)|
 | 7 | 👜 [Handy Haversacks](https://adventofcode.com/2020/day/7) | [day07.ts](./src/2020/day07.ts)|
+| 8 | 🕹️ [Handheld Halting](https://adventofcode.com/2020/day/8) | [day08.ts](./src/2020/day08.ts)|
