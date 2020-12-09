@@ -5,4 +5,6 @@ export const readAllLinesFilterEmpty = (path: string): string[] => readAllLines(
 
 export const readAllLines = (path: string): string[] => fs.readFileSync(path, 'utf-8')
     .split('\n');
-    
+
+export const readAllNumbers = (path: string): number[] =>
+    readAllLinesFilterEmpty(path).map((n) => parseInt(n));
