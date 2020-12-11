@@ -9,3 +9,6 @@ export const union = <T>(a: T[], b: T[]): T[] =>
 
 export const distinct = <T>(a: T[]): T[] =>
     a.filter((x, idx) => idx === a.indexOf(x));
+
+export const count = <T>(a: T[], value: T): number =>
+    a.reduce((count, x) => count + +(x === value), 0);

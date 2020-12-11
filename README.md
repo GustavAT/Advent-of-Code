@@ -1,6 +1,6 @@
 # 🎄 Advent of Code 🎄
 
-[![AoC 2020 Progress](https://img.shields.io/badge/AoC%202020-10%2F25-dodgerblue?logo=typescript&logoWidth=10)](./src/2020/)
+[![AoC 2020 Progress](https://img.shields.io/badge/AoC%202020-11%2F25-dodgerblue?logo=typescript&logoWidth=10)](./src/2020/)
 
 Solutions to [Advent of Code](https://adventofcode.com/) puzzles written in TypeScript.
 
@@ -17,6 +17,8 @@ npm i
 ts-node src/2020/day01
 ```
 
+Node 14 or later must be installed.
+
 ## [2020](https://adventofcode.com/2020/)
 
 | Day | Puzzle | Solution |
@@ -31,3 +33,4 @@ ts-node src/2020/day01
 | 8 | 🕹️ [Handheld Halting](https://adventofcode.com/2020/day/8) | [day08.ts](./src/2020/day08.ts)|
 | 9 | 🔢 [Encoding Error](https://adventofcode.com/2020/day/9) | [day09.ts](./src/2020/day09.ts)|
 | 10 | ⚡ [Adapter Array](https://adventofcode.com/2020/day/10) | [day10.ts](./src/2020/day10.ts)|
+| 11 | 💺 [Seating System](https://adventofcode.com/2020/day/11) | [day11.ts](./src/2020/day11.ts)|
