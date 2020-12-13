@@ -19,14 +19,14 @@ const part1 = (input: string[]): number => {
     return minTime[0] * minTime[1];
 }
 
-const parseInput2 = (input: string[]): [number, number][] =>
+const parseInput2 = (input: string[]): [bigint, bigint][] =>
     input[1]
         .split(',')                                             // Split for each bus
         .map((bus, idx) => [bus, idx] as [string, number])      // Map to [bus, index]
-        .filter(([busNr, _]) => busNr !== 'x')                  // Filter not known bus-line 'x'
+        .filter(([busNr]) => busNr !== 'x')                     // Filter not known bus-line 'x'
         .map(([nr, index]) => {
-            const busNr = parseInt(nr);                         
-            const mod = (busNr - index) % busNr;                // Calculate remainder
+            const busNr = BigInt(nr);
+            const mod = (busNr - BigInt(index)) % busNr;        // Calculate remainder
 
             return [busNr, mod < 0 ? mod + busNr : mod];        // Make remainder positive
         });
@@ -34,41 +34,41 @@ const parseInput2 = (input: string[]): [number, number][] =>
 /**
  * Solve using the Chinese Reminder Theorem
  * 
- * x = a (mod m)
- * <=>
+ * x ≡ a (mod m)
+ * 
+ * M = ∏(m)
+ * 
+ * // for each m do:
+ * M` = M / m
+ * r*m + s*M` = 1       // Use extended euclid to find two integers r, s
+ * e = s*M`             // Substitute s*M` by e
+ * 
+ * x` = ∑(a*e)
+ * x` ≡ x (mod M)
+ * 
+ * Using:
  * a = (bus - index) % bus
  * m = bus
- * x = (bus - index) % bus (mod bus)   // for all busses
- * 
- * For each bus calculate:
- * M = product(m)   <=> product(bus)
- * Mi = M / m       <=> M / bus
- * r*m + s*Mi = 1   <=> r*bus + s*Mi
- * e = s*Mi
- * 
- * x = sum(a*e)   <=> sum((bus - index) % bus * e) // for all buses
- * 
- * time = x % M
+ * x = time
  * 
  * @param input input
  */
-const part2 = (input: string[]): bigint => {                                // Solve using CRT
-    const mods = parseInput2(input);                                        // Map input to [bus (m), bus - index (a)];
-    const M = mods.reduce((product, [m, _]) => product * BigInt(m), 1n);    // Product of all mods
-    let sum = 0n;
+const part2 = (input: string[]): bigint => {
+    const mods = parseInput2(input);                                        // Map input to [m, a];
+    const M = mods.reduce((product, [m, _]) => product * m, 1n);            // Calculate M
+    let x = 0n;
 
     for (const [m, a] of mods) {
-        const Mi = M / BigInt(m);
+        const Mi = M / m;
+        const [, , s] = extendedEuclid(m, Mi);                              // Use extended euclid to calculate r,s
+        const e = s * Mi;                                                   // Substitue s*M` by e
 
-        const [_, __, s] = extendedEuclid(BigInt(m), BigInt(Mi));
-        const e = s * Mi;
-
-        sum += e * BigInt(a);
+        x += e * a;
     }
 
-    const time = sum % M;
+    const time = x % M;                                                     // x ≡ time (mod M)
 
-    return time < 0 ? time + M : time;
+    return time < 0 ? time + M : time;                                      // Add M if time is negative
 }
 
 const input = readAllLinesFilterEmpty('./res/2020/input13.txt');
