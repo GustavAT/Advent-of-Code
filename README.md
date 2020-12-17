@@ -1,6 +1,6 @@
 # 🎄 Advent of Code 🎄
 
-[![AoC 2020 Progress](https://img.shields.io/badge/AoC%202020-16%2F25-dodgerblue?logo=typescript&logoWidth=10)](./src/2020/)
+[![AoC 2020 Progress](https://img.shields.io/badge/AoC%202020-17%2F25-dodgerblue?logo=typescript&logoWidth=10)](./src/2020/)
 
 Solutions to [Advent of Code](https://adventofcode.com/) puzzles written in TypeScript.
 
@@ -39,3 +39,4 @@ Node 14 or later must be installed.
 | 14 | 💾 [Docking Data](https://adventofcode.com/2020/day/14) | [day14.ts](./src/2020/day14.ts)|
 | 15 | 🧝 [Rambunctious Recitation](https://adventofcode.com/2020/day/15) | [day15.ts](./src/2020/day15.ts)|
 | 16 | 🎫 [Ticket Translation](https://adventofcode.com/2020/day/16) | [day16.ts](./src/2020/day16.ts)|
+| 17 | 🧊 [Conway Cubes](https://adventofcode.com/2020/day/17) | [day17.ts](./src/2020/day17.ts)|
