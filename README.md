@@ -1,6 +1,6 @@
 # 🎄 Advent of Code 🎄
 
-[![AoC 2020 Progress](https://img.shields.io/badge/AoC%202020-19%2F25-dodgerblue?logo=typescript&logoWidth=10)](./src/2020/)
+[![AoC 2020 Progress](https://img.shields.io/badge/AoC%202020-20%2F25-dodgerblue?logo=typescript&logoWidth=10)](./src/2020/)
 
 Solutions to [Advent of Code](https://adventofcode.com/) puzzles written in TypeScript.
 
@@ -42,3 +42,4 @@ Node 14 or later must be installed.
 | 17 | 🧊 [Conway Cubes](https://adventofcode.com/2020/day/17) | [day17.ts](./src/2020/day17.ts)|
 | 18 | 🧮 [Operation Order](https://adventofcode.com/2020/day/18) | [day18.ts](./src/2020/day18.ts)|
 | 19 | 👹 [Monster Messages](https://adventofcode.com/2020/day/19) | [day19.ts](./src/2020/day19.ts)|
+| 20 | 🐉 [Jurassic Jigsaw](https://adventofcode.com/2020/day/20) | [day20.ts](./src/2020/day20.ts)|
