@@ -1,14 +1,7 @@
 import { readAllLinesFilterEmpty } from '../io.util';
+import { fromKey, toKey } from '../util';
 
 type Cubes = Map<string, string>;
-
-const toKey = (position: number[]): string => {         // Maps use '===' to check keys for equality. If arrays are used as keys, two different arrays with the same values would not give the same value.
-    return position.join(',');                          // Intermediate step to convert a position --> string
-}
-
-const fromKey = (key: string): number[] => {            // See comment above
-    return key.split(',').map((pos) => parseInt(pos));  // Intermediate step to convert string --> posiiton
-}
 
 const parseInput3D = (input: string[]): Cubes => {
     const field = input.map((line) => line.split(''));
@@ -17,7 +10,7 @@ const parseInput3D = (input: string[]): Cubes => {
     for (let y = 0; y < field.length; y++) {
         for (let x = 0; x < field[y].length; x++) {
             if (field[y][x] === '#') {                      // Only consider active cubes '#'
-                cubes.set(toKey([x, y, 0]), field[y][x]);   // Add a new cube to the map (z is 0 because the puzzle input is on plane 0)
+                cubes.set(toKey(x, y, 0), field[y][x]);     // Add a new cube to the map (z is 0 because the puzzle input is on plane 0)
             }
         }
     }
@@ -50,7 +43,7 @@ const expand3D = (cubes: Cubes): Cubes => {                     // Idea: for eac
     for (const [key] of cubes) {
         const [x, y, z] = fromKey(key);
         for (const [nX, nY, nZ] of neighbours) {
-            const newPos = toKey([x + nX, y + nY, z + nZ]);     // Get neighbouring positions relative to the current cube
+            const newPos = toKey(x + nX, y + nY, z + nZ);       // Get neighbouring positions relative to the current cube
             newCubes.set(newPos, cubes.get(newPos) || '.');     // Add '.' if the cube is inactive, otherwise add the existing value (active cube)
         }
     }
@@ -78,7 +71,7 @@ const simulateStep3D = (cube: Cubes): Cubes => {
     for (const [key, value] of targetCubes) {
         const [x, y, z] = fromKey(key);
         const active = neighbours.map(([nX, nY, nZ]) => {                   // Map relative neighbour position to absolute positions around the current cube.
-            return cube.get(toKey([x + nX, y + nY, z + nZ])) || '.';        // Get the cubes at these positions; inactive '.' if not existing
+            return cube.get(toKey(x + nX, y + nY, z + nZ)) || '.';          // Get the cubes at these positions; inactive '.' if not existing
         })
             .filter((s) => s === '#')                                       // Filter active cubes '#'
             .length;                                                        // Count
@@ -110,7 +103,7 @@ const parseInput4D = (input: string[]): Cubes => {
     for (let y = 0; y < field.length; y++) {
         for (let x = 0; x < field[y].length; x++) {
             if (field[y][x] === '#') {
-                cubes.set(toKey([x, y, 0, 0]), field[y][x]);
+                cubes.set(toKey(x, y, 0, 0), field[y][x]);
             }
         }
     }
@@ -145,7 +138,7 @@ const expand4D = (cubes: Cubes): Cubes => {
     for (const [key] of cubes) {
         const [x, y, z, w] = fromKey(key);
         for (const [nX, nY, nZ, nW] of neighbours) {
-            const newPos = toKey([x + nX, y + nY, z + nZ, w + nW]);
+            const newPos = toKey(x + nX, y + nY, z + nZ, w + nW);
             newCubes.set(newPos, cubes.get(newPos) || '.');
         }
     }
@@ -161,7 +154,7 @@ const simulateStep4D = (cubes: Cubes): Cubes => {
     for (const [key, value] of targetCubes) {
         const [x, y, z, w] = fromKey(key);
         const active = neighbours.map(([nX, nY, nZ, nW]) => {        
-            return cubes.get(toKey([x + nX, y + nY, z + nZ, w + nW])) || '.';
+            return cubes.get(toKey(x + nX, y + nY, z + nZ, w + nW)) || '.';
         })
             .filter((s) => s === '#')
             .length;

@@ -43,7 +43,8 @@ export const identity = <T>(value: T): T => value;
 
 export const flatMapToArray = <T>(map: Map<any, T[]>): T[] => Array.from(map.values()).flatMap(identity);
 
-export const fromKey = (key: string): number[] =>
-    key.split('#').map(Number);
+export const fromKey = (key: string): number[] =>   // Maps use strict equality for checking if a key exists or not. Arrays as keys are problematic.
+    key.split('#').map(Number);                     // Two different arrays with the same values would not give the same value.
 
-export const toKey = (...values: number[]): string => values.join('#');
+export const toKey = (...values: number[]): string =>
+    values.join('#');
