@@ -1,6 +1,6 @@
 # 🎄 Advent of Code 🎄
 
-[![AoC 2020 Progress](https://img.shields.io/badge/AoC%202020-23%2F25-dodgerblue?logo=typescript&logoWidth=10)](./src/2020/)
+[![AoC 2020 Progress](https://img.shields.io/badge/AoC%202020-24%2F25-dodgerblue?logo=typescript&logoWidth=10)](./src/2020/)
 
 Solutions to [Advent of Code](https://adventofcode.com/) puzzles written in TypeScript.
 
@@ -46,3 +46,4 @@ Node 14 or later must be installed.
 | 21 | 📋 [Allergen Assessment](https://adventofcode.com/2020/day/21) | [day21.ts](./src/2020/day21.ts)|
 | 22 | 🗡️ [Crab Combat](https://adventofcode.com/2020/day/22) | [day22.ts](./src/2020/day22.ts)|
 | 23 | 🦀 [Crab Cups](https://adventofcode.com/2020/day/23) | [day23.ts](./src/2020/day23.ts)|
+| 24 | 🏨 [Lobby Layout](https://adventofcode.com/2020/day/24) | [day24.ts](./src/2020/day24.ts)|

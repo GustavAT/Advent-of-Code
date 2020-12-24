@@ -39,7 +39,11 @@ export const count2D = <T>(data: T[][], target: T): number =>
         (sum, row) => sum + row.reduce(
             (innerSum, source) => innerSum + (source === target ? 1 : 0), 0), 0);
 
-export const identity = <T> (value: T): T => value;
+export const identity = <T>(value: T): T => value;
 
-export const flatMapToArray = <T> (map: Map<any, T[]>): T[] => Array.from(map.values()).flatMap(identity);
+export const flatMapToArray = <T>(map: Map<any, T[]>): T[] => Array.from(map.values()).flatMap(identity);
 
+export const fromKey = (key: string): number[] =>
+    key.split('#').map(Number);
+
+export const toKey = (...values: number[]): string => values.join('#');
