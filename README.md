@@ -1,10 +1,11 @@
 # 🎄 Advent of Code 🎄
 
+[![AoC 2021 Progress](https://img.shields.io/badge/AoC%202021-01%2F25-blue?logo=typescript&logoWidth=10)](./src/2020/)
 [![AoC 2020 Progress](https://img.shields.io/badge/AoC%202020-25%2F25-gold?logo=typescript&logoWidth=10)](./src/2020/)
 
 Solutions to [Advent of Code](https://adventofcode.com/) puzzles written in TypeScript.
 
- **📥 Install dependencies using *`npm`*:**
+**📥 Install dependencies using *`npm`*:**
 
 ```bash
 npm i
@@ -13,16 +14,22 @@ npm i
 **🏃 Run a solution using `ts-node`:**
 
 ```bash
-# 2020 day 1 puzzle
-ts-node src/2020/day01
+# 2021 day 1 puzzle
+ts-node src/2021/day01
 ```
 
-Node 14 or later must be installed.
+**ℹ️ ️`node v14+` is required.**
+
+## [2021](https://adventofcode.com/2021)
+
+| Day | Puzzle | Solution |
+|---|---|---|
+| 1 | ⚓ [Sonar Sweep](https://adventofcode.com/2021/day/1) | [day01.ts](./src/2021/day01.ts) |
 
 ## [2020](https://adventofcode.com/2020/)
 
 | Day | Puzzle | Solution |
-|-|-|-|
+|---|---|---|
 | 1 | 🛠️ [Report Repair](https://adventofcode.com/2020/day/1) | [day01.ts](./src/2020/day01.ts)|
 | 2 | 🔑 [Password Philosophy](https://adventofcode.com/2020/day/2) | [day02.ts](./src/2020/day02.ts)|
 | 3 | 🛷 [Toboggan Trajectory](https://adventofcode.com/2020/day/3) | [day03.ts](./src/2020/day03.ts)|
