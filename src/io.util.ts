@@ -8,3 +8,7 @@ export const readAllLines = (path: string): string[] => fs.readFileSync(path, 'u
 
 export const readAllNumbers = (path: string): number[] =>
     readAllLinesFilterEmpty(path).map((n) => parseInt(n));
+
+export const readLinesWithRegExp = (path: string, regex: RegExp) =>
+  readAllLinesFilterEmpty(path)
+    .map((line) => line.match(regex)!);

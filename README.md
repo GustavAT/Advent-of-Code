@@ -1,6 +1,6 @@
 # 🎄 Advent of Code 🎄
 
-[![AoC 2021 Progress](https://img.shields.io/badge/AoC%202021-01%2F25-blue?logo=typescript&logoWidth=10)](./src/2020/)
+[![AoC 2021 Progress](https://img.shields.io/badge/AoC%202021-02%2F25-blue?logo=typescript&logoWidth=10)](./src/2021/)
 [![AoC 2020 Progress](https://img.shields.io/badge/AoC%202020-25%2F25-gold?logo=typescript&logoWidth=10)](./src/2020/)
 
 Solutions to [Advent of Code](https://adventofcode.com/) puzzles written in TypeScript.
@@ -24,7 +24,8 @@ ts-node src/2021/day01
 
 | Day | Puzzle | Solution |
 |---|---|---|
-| 1 | ⚓ [Sonar Sweep](https://adventofcode.com/2021/day/1) | [day01.ts](./src/2021/day01.ts) |
+| 1 | 📡 [Sonar Sweep](https://adventofcode.com/2021/day/1) | [day01.ts](./src/2021/day01.ts) |
+| 2 | 🤿 [Dive!](https://adventofcode.com/2021/day/2) | [day02.ts](./src/2021/day02.ts) |
 
 ## [2020](https://adventofcode.com/2020/)
 
