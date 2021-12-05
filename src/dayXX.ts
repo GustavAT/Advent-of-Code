@@ -1,4 +1,4 @@
-import { readAllLines } from './io.util';
+import { readAllLines } from '../io.util';
 
 const part1 = (input: string[]): number => {
   return -1;
