@@ -53,7 +53,7 @@ const part2 = (input: Line[]): number => {
     } else {
       const yFactor = line.p1.y < line.p2.y ? 1 : -1;                                 // 1 = bottom to top, -1 = top to bottom
       const xFactor = line.p1.x < line.p2.x ? 1 : -1;                                 // 1 = left to right, -1 = right to left
-      const delta = Math.abs(line.p1.x - line.p2.x)                                // Length of the line on x-axis (= same as y-axis as 45 degree)
+      const delta = Math.abs(line.p1.x - line.p2.x)                                   // Length of the line on x-axis (= same as y-axis as 45 degree)
 
       for (let i = 0; i <= delta; i++) {                                              // Iterate line and update intersections
         field[line.p1.y + (i * yFactor)][line.p1.x + (i * xFactor)] += 1;
