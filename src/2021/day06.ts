@@ -1,5 +1,5 @@
 import { sum } from '../arrays.util';
-import { readAllLinesFilterEmpty } from '../io.util';
+import { readNumbersFirstLine } from '../io.util';
 
 const simulate = (fish: number[], days: number): number => {
   let groups = [...Array(9)].map(() => 0);
@@ -18,8 +18,6 @@ const part1 = (input: number[]): number => simulate(input, 80);
 
 const part2 = (input: number[]): number => simulate(input, 256);
 
-const input = readAllLinesFilterEmpty('./res/2021/input06.txt')[0]
-  .split(',')
-  .map(Number);
+const input = readNumbersFirstLine('./res/2021/input06.txt');
 console.log('part1:', part1(input));
 console.log('part2:', part2(input));
