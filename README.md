@@ -1,6 +1,6 @@
 # 🎄 Advent of Code 🎄
 
-[![AoC 2021 Progress](https://img.shields.io/badge/AoC%202021-07%2F25-blue?logo=typescript&logoWidth=10)](./src/2021/)
+[![AoC 2021 Progress](https://img.shields.io/badge/AoC%202021-08%2F25-blue?logo=typescript&logoWidth=10)](./src/2021/)
 [![AoC 2020 Progress](https://img.shields.io/badge/AoC%202020-25%2F25-gold?logo=typescript&logoWidth=10)](./src/2020/)
 
 Solutions to [Advent of Code](https://adventofcode.com/) puzzles written in TypeScript.
@@ -31,6 +31,7 @@ ts-node src/2021/day01
 | 5 | ⛲ [Hydrothermal Venture](https://adventofcode.com/2021/day/5) | [day05.ts](./src/2021/day05.ts) |
 | 6 | 🐟 [Lanternfish](https://adventofcode.com/2021/day/6) | [day06.ts](./src/2021/day06.ts) |
 | 7 | ⛽ [The Treachery of Whales](https://adventofcode.com/2021/day/7) | [day07.ts](./src/2021/day07.ts) |
+| 8 | 7️⃣ [Seven Segment Search](https://adventofcode.com/2021/day/8) | [day07.ts](./src/2021/day08.ts) |
 
 ## [2020](https://adventofcode.com/2020/)
 
