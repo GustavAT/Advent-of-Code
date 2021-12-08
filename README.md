@@ -31,7 +31,7 @@ ts-node src/2021/day01
 | 5 | ⛲ [Hydrothermal Venture](https://adventofcode.com/2021/day/5) | [day05.ts](./src/2021/day05.ts) |
 | 6 | 🐟 [Lanternfish](https://adventofcode.com/2021/day/6) | [day06.ts](./src/2021/day06.ts) |
 | 7 | ⛽ [The Treachery of Whales](https://adventofcode.com/2021/day/7) | [day07.ts](./src/2021/day07.ts) |
-| 8 | 7️⃣ [Seven Segment Search](https://adventofcode.com/2021/day/8) | [day07.ts](./src/2021/day08.ts) |
+| 8 | 7️⃣ [Seven Segment Search](https://adventofcode.com/2021/day/8) | [day08.ts](./src/2021/day08.ts) |
 
 ## [2020](https://adventofcode.com/2020/)
 

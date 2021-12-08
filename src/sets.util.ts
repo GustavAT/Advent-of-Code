@@ -26,4 +26,20 @@ export const maximum = <T>(a: T[]): T | undefined => {
     }
 
     return maximum;
-}
+};
+
+/**
+ * Returns true if a includes every element in b: B \ A = O
+ * @param a Source array
+ * @param b Target array
+ */
+export const contains = <T>(a: T[], b: T[]): boolean =>
+  b.every((x) => a.includes(x));
+
+/**
+ * Returns true if a and b contain the same elements: A \ B = B \ A = 0
+ * @param a
+ * @param b
+ */
+export const equals = <T>(a: T[], b: T[]): boolean =>
+  contains(a, b) && contains(b, a);
