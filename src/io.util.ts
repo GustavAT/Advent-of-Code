@@ -15,6 +15,9 @@ export const readFirstLine = (path: string): string =>
 export const readNumbersFirstLine = (path: string): number[] =>
   readFirstLine(path).split(',').map(Number);
 
+export const readAllNumbers2d = (path: string): number[][] =>
+  readAllLinesFilterEmpty(path).map((line) => [...line].map((s) => +s));
+
 export const readLinesWithRegExp = (path: string, regex: RegExp) =>
   readAllLinesFilterEmpty(path)
     .map((line) => line.match(regex)!);
