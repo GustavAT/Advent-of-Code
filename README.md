@@ -1,6 +1,6 @@
 # 🎄 Advent of Code 🎄
 
-[![AoC 2021 Progress](https://img.shields.io/badge/AoC%202021-11%2F25-blue?logo=typescript&logoWidth=10)](./src/2021/)
+[![AoC 2021 Progress](https://img.shields.io/badge/AoC%202021-12%2F25-blue?logo=typescript&logoWidth=10)](./src/2021/)
 [![AoC 2020 Progress](https://img.shields.io/badge/AoC%202020-25%2F25-gold?logo=typescript&logoWidth=10)](./src/2020/)
 
 Solutions to [Advent of Code](https://adventofcode.com/) puzzles written in TypeScript.
@@ -35,6 +35,7 @@ ts-node src/2021/day01
 | 9 | 💨 [Smoke Basin](https://adventofcode.com/2021/day/9) | [day09.ts](./src/2021/day09.ts) |
 | 10 | 🔣 [Syntax Scoring](https://adventofcode.com/2021/day/10) | [day10.ts](./src/2021/day10.ts) |
 | 11 | 🐙 [Dumbo Octopus](https://adventofcode.com/2021/day/11) | [day11.ts](./src/2021/day11.ts) |
+| 12 | 🔚️ [Passage Pathing](https://adventofcode.com/2021/day/12) | [day12.ts](./src/2021/day12.ts) |
 
 ## [2020](https://adventofcode.com/2020/)
 
