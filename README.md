@@ -1,6 +1,6 @@
 # 🎄 Advent of Code 🎄
 
-[![AoC 2021 Progress](https://img.shields.io/badge/AoC%202021-21%2F25-blue?logo=typescript&logoWidth=10)](./src/2021)
+[![AoC 2021 Progress](https://img.shields.io/badge/AoC%202021-22%2F25-blue?logo=typescript&logoWidth=10)](./src/2021)
 [![AoC 2020 Progress](https://img.shields.io/badge/AoC%202020-25%2F25-gold?logo=typescript&logoWidth=10)](./src/2020)
 
 Solutions to [Advent of Code](https://adventofcode.com/) puzzles written in TypeScript.
@@ -45,6 +45,7 @@ ts-node src/2021/day01
 | 19 | 🔦️ [Beacon Scanner](https://adventofcode.com/2021/day/19) | [day19.ts](./src/2021/day19.ts) |
 | 20 | 🗺️ [Trench Map](https://adventofcode.com/2021/day/20) | [day20.ts](./src/2021/day20.ts) |
 | 21 | 🎲 [Dirac Dice](https://adventofcode.com/2021/day/21) | [day21.ts](./src/2021/day21.ts) |
+| 22 | ⚛️ [Reactor Reboot](https://adventofcode.com/2021/day/22) | [day22.ts](./src/2021/day22.ts) |
 
 ## [2020](https://adventofcode.com/2020/)
 
