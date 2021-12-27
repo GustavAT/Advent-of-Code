@@ -1,6 +1,6 @@
 # 🎄 Advent of Code 🎄
 
-[![AoC 2021 Progress](https://img.shields.io/badge/AoC%202021-24%2F25-blue?logo=typescript&logoWidth=10)](./src/2021)
+[![AoC 2021 Progress](https://img.shields.io/badge/AoC%202021-25%2F25-gold?logo=typescript&logoWidth=10)](./src/2021)
 [![AoC 2020 Progress](https://img.shields.io/badge/AoC%202020-25%2F25-gold?logo=typescript&logoWidth=10)](./src/2020)
 
 Solutions to [Advent of Code](https://adventofcode.com/) puzzles written in TypeScript.
@@ -47,7 +47,8 @@ ts-node src/2021/day01
 | 21 | 🎲 [Dirac Dice](https://adventofcode.com/2021/day/21) | [day21.ts](./src/2021/day21.ts) |
 | 22 | ⚛️ [Reactor Reboot](https://adventofcode.com/2021/day/22) | [day22.ts](./src/2021/day22.ts) |
 | 23 | 🦐️ [Amphipod](https://adventofcode.com/2021/day/23) | [day23.ts](./src/2021/day23.ts) |
-| 24 | 🧮️ [Arithmetic Logic Unit](https://adventofcode.com/2021/day/24) | [day24.ts](./src/2021/day24.ts) |
+| 24 | 🧮️ [Arithmetic Logic Unit](https://adventofcode.com/2021/day/24) | [day24.md](./src/2021/day24.md) |
+| 25 | 🥒 [Sea Cucumber](https://adventofcode.com/2021/day/25) | [day25.ts](./src/2021/day25.ts) |
 
 ## [2020](https://adventofcode.com/2020/)
 
