@@ -1,6 +1,6 @@
 # 🎄 Advent of Code 🎄
 
-[![AoC 2022 Progress](https://img.shields.io/badge/AoC%202022-2%2F25-blue?logo=typescript&logoWidth=10)](./src/2021)
+[![AoC 2022 Progress](https://img.shields.io/badge/AoC%202022-3%2F25-blue?logo=typescript&logoWidth=10)](./src/2021)
 [![AoC 2021 Progress](https://img.shields.io/badge/AoC%202021-25%2F25-gold?logo=typescript&logoWidth=10)](./src/2021)
 [![AoC 2020 Progress](https://img.shields.io/badge/AoC%202020-25%2F25-gold?logo=typescript&logoWidth=10)](./src/2020)
 
@@ -23,10 +23,11 @@ ts-node src/2021/day01
 
 ## [2021](https://adventofcode.com/2022)
 
-| Day | Puzzle                                                        | Solution                        |
-|-----|---------------------------------------------------------------|---------------------------------|
-| 1   | 🍫 [Calorie Counting](https://adventofcode.com/2022/day/1)    | [day01.ts](./src/2022/day01.ts) |
-| 2   | 🪨 [Rock Paper Scissors](https://adventofcode.com/2022/day/2) | [day02.ts](./src/2022/day02.ts) |
+| Day | Puzzle                                                            | Solution                        |
+|-----|-------------------------------------------------------------------|---------------------------------|
+| 1   | 🍫 [Calorie Counting](https://adventofcode.com/2022/day/1)        | [day01.ts](./src/2022/day01.ts) |
+| 2   | 🪨 [Rock Paper Scissors](https://adventofcode.com/2022/day/2)     | [day02.ts](./src/2022/day02.ts) |
+| 3   | 🎒 [Rucksack Reorganization](https://adventofcode.com/2022/day/3) | [day03.ts](./src/2022/day03.ts) |
 
 ## [2021](https://adventofcode.com/2021)
 
