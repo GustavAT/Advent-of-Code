@@ -1,6 +1,6 @@
 # 🎄 Advent of Code 🎄
 
-[![AoC 2022 Progress](https://img.shields.io/badge/AoC%202022-9%2F25-blue?logo=typescript&logoWidth=10)](./src/2021)
+[![AoC 2022 Progress](https://img.shields.io/badge/AoC%202022-10%2F25-blue?logo=typescript&logoWidth=10)](./src/2021)
 [![AoC 2021 Progress](https://img.shields.io/badge/AoC%202021-25%2F25-gold?logo=typescript&logoWidth=10)](./src/2021)
 [![AoC 2020 Progress](https://img.shields.io/badge/AoC%202020-25%2F25-gold?logo=typescript&logoWidth=10)](./src/2020)
 
@@ -34,6 +34,7 @@ ts-node src/2021/day01
 | 7   | 📟 [No Space Left On Device](https://adventofcode.com/2022/day/7) | [day07.ts](./src/2022/day07.ts) |
 | 8   | 🌳 [Treetop Tree House](https://adventofcode.com/2022/day/8)      | [day08.ts](./src/2022/day08.ts) |
 | 9   | 🪢 [Rope Bridge](https://adventofcode.com/2022/day/9)             | [day09.ts](./src/2022/day09.ts) |
+| 10  | 📺 [Cathode-Ray Tube](https://adventofcode.com/2022/day/10)       | [day10.ts](./src/2022/day10.ts) |
 
 ## [2021](https://adventofcode.com/2021)
 
