@@ -1,6 +1,6 @@
 # 🎄 Advent of Code 🎄
 
-[![AoC 2022 Progress](https://img.shields.io/badge/AoC%202022-17%2F25-blue?logo=typescript&logoWidth=10)](./src/2022)
+[![AoC 2022 Progress](https://img.shields.io/badge/AoC%202022-18%2F25-blue?logo=typescript&logoWidth=10)](./src/2022)
 [![AoC 2021 Progress](https://img.shields.io/badge/AoC%202021-25%2F25-gold?logo=typescript&logoWidth=10)](./src/2021)
 [![AoC 2020 Progress](https://img.shields.io/badge/AoC%202020-25%2F25-gold?logo=typescript&logoWidth=10)](./src/2020)
 
@@ -42,6 +42,7 @@ ts-node src/2022/day01
 | 15  | 📡 [Beacon Exclusion Zone](https://adventofcode.com/2022/day/15)   | [day15.ts](./src/2022/day15.ts) |
 | 16  | 🌋 [Proboscidea Volcanium](https://adventofcode.com/2022/day/16)   | [day16.ts](./src/2022/day16.ts) |
 | 17  | 🪨 [Pyroclastic Flow](https://adventofcode.com/2022/day/17)        | [day17.ts](./src/2022/day17.ts) |
+| 18  | 🫖 [Boiling Boulders](https://adventofcode.com/2022/day/18)        | [day18.ts](./src/2022/day18.ts) |
 
 ## [2021](https://adventofcode.com/2021)
 
