@@ -30,3 +30,8 @@ export const sort = (a: number[]) => [...a].sort((x, y) => x - y);
  * @param a Source array
  */
 export const reverse = <T>(a: T[]): T[] => [...a].reverse();
+
+/**
+ * Map each value in given array to it's value and index within array.
+ */
+export const mapWithIndex = <T>(a: T[]): { index: number, value: T}[] => a.map((value, index) => ({value, index}));
